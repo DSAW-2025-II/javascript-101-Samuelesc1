@@ -49,6 +49,7 @@ function countVowels(str) {
 
   for (let char of str) {
     if (vowels.includes(char)) {
+      count++;
 
     }
   }
