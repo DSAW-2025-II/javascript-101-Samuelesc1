@@ -60,9 +60,13 @@ function countVowels(str) {
 // Check if a Number is Prime
 function isPrime(n) {
   // Add your code here
-  if (typeof n !== "number" || !Number.isInteger(n) || n < 2) {
+  if (typeof n !== "number" || !Number.isInteger(n)) {
     return "Los datos de entrada no son adecuados";
 
+  }
+
+  if (n < 2) {
+    return false;
   }
 
   for (let i = 2; i <= Math.sqrt(n); i++) {
