@@ -2,7 +2,7 @@
 function sum(a, b) {
   // Add your code here
   if (typeof a !== "number" || typeof b !== "number"){
-    return "Los datos escritos no son los adecuados";
+    return "Los datos de entrada no son adecuados";
   }
   return a + b;
 }
@@ -11,7 +11,7 @@ function sum(a, b) {
 function factorial(n) {
   // Add your code here
   if (typeof n !== "number" || n < 0 || !Number.isInteger(n)) {
-    return "Los datos ingresados no son los adecuados";
+    return "Los datos de entrada no son adecuados";
   }
 
   let result = 1;
@@ -25,7 +25,7 @@ function factorial(n) {
 function findLargest(arr) {
   // Add your code here
   if(!Array.isArray(arr) || arr.length === 0 || !arr.every(num => typeof num === "number")) {
-    return "Los datos ingresados no son los adecuados"
+    return "Los datos de entrada no son adecuados"
   }
 
   let max = arr[0];
@@ -41,7 +41,7 @@ function findLargest(arr) {
 function countVowels(str) {
   // Add your code here
   if (typeof str !== "string") {
-    return "Los datos ingresados no son los adecuados";
+    return "Los datos de entrada no son adecuados";
   }
 
   let vowels = "aeiouAEIOU";
@@ -61,7 +61,7 @@ function countVowels(str) {
 function isPrime(n) {
   // Add your code here
   if (typeof n !== "number" || !Number.isInteger(n) || n < 2) {
-    return "Los datos ingresados no son los adecuados";
+    return "Los datos de entrada no son adecuados";
 
   }
 
